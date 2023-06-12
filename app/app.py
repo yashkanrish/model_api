@@ -31,7 +31,11 @@ def api():
         return jsonify({'error': 'no request received'})
 
     # Parse request args into feature array for prediction.
+<<<<<<< HEAD
     #Second Commit
+=======
+    #Parse to cause an exception.
+>>>>>>> test
     x_list, missing_data = parse_args(request.json)
     x_array = np.array([x_list])
 
